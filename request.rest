@@ -1,0 +1,39 @@
+GET http://localhost:8000/api/v1/users
+
+###
+POST http://localhost:8000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "username":"sinagadiory",
+    "email":"diorypribadi2@gmail.com",
+    "password":"Diory1234"
+}
+
+###
+GET http://localhost:8000/api/v1/users/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpb3J5cHJpYmFkaTJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJzaW5hZ2FkaW9yeSIsImlkIjoxLCJpYXQiOjE2NjM4MzYyNzV9.7Rv9oNznOtd5klP9Mu5kKCfTJQPLYfEOW37yF-Ai8pM
+
+###
+POST http://localhost:8000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email":"diorypribadi2@gmail.com",
+    "password":"Diory1234"
+}
+
+###
+GET http://localhost:8000/api/v1/reflections
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpb3J5cHJpYmFkaTJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJzaW5hZ2FkaW9yeSIsImlkIjoxLCJpYXQiOjE2NjM5MTkzMjh9.REN7DHxcX692BuCRmpzGvmH0JAG6PhxAGxQXZBJhOic
+
+###
+POST  http://localhost:8000/api/v1/reflections
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRpb3J5cHJpYmFkaTJAZ21haWwuY29tIiwidXNlcm5hbWUiOiJzaW5hZ2FkaW9yeSIsImlkIjoxLCJpYXQiOjE2NjM5MTkzMjh9.REN7DHxcX692BuCRmpzGvmH0JAG6PhxAGxQXZBJhOic
+Content-Type: application/json
+
+{
+  "success": "Today Success",
+  "low_point": "new Low Point",
+  "take-away": "new Take away"
+}
